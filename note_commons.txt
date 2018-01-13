@@ -1,0 +1,5 @@
+一.lang
+StringUtils
+是null安全的(即如果输入参数String为null则不会抛出NullPointerException，
+而是做了相应处理，例如，如果输入为null则返回也是null等
+除了构造器，StringUtils中一共有130多个方法，并且都是static的
