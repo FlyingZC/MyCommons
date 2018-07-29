@@ -10,6 +10,10 @@ import java.util.Map;
 import org.apache.commons.lang.StringUtils;
 import org.junit.Test;
 
+/**
+ * @author flyingzc
+ * 包含使用正则表达式 和 使用字符串截取两种方式实现的 ${} 解析
+ */
 public class T03Reg
 {
     @Test
@@ -77,7 +81,7 @@ public class T03Reg
                 repMap));
     }
 
-    /**将${catalina.home}等替换成具体的路径
+    /** 将${catalina.home}等替换成具体的路径
      * System property replacement in the given string.
      * 
      * @param str The original string
