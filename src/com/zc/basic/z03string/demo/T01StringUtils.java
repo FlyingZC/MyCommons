@@ -59,4 +59,35 @@ public class T01StringUtils
         System.out.println(StringUtils.trimToEmpty("   "));//空白
         System.out.println(StringUtils.trimToEmpty(" 1 2 "));
     }
+
+    @Test
+    public void testIsNotNum() {
+        // === false
+        System.out.println(StringUtils.isNumeric("1.1"));
+        System.out.println(StringUtils.isNumeric("1.1.1"));
+        System.out.println(StringUtils.isNumeric(".1"));
+        System.out.println(StringUtils.isNumeric("-0"));
+        System.out.println(StringUtils.isNumeric("1 .1"));
+        System.out.println(StringUtils.isNumeric("- 1.1"));
+        System.out.println(StringUtils.isNumeric("2018.12.12"));
+
+        System.out.println(StringUtils.isNumeric("-1"));
+    }
+
+    @Test
+    public void testIsNum() {
+        System.out.println(StringUtils.isNumeric("11"));
+        System.out.println(StringUtils.isNumeric("0"));
+    }
+
+    public static boolean isNumeric(String str) {
+        try {
+            Integer.parseInt(str);
+            return true;
+        } catch (NumberFormatException e) {
+            System.out.println("异常：\"" + str + "\"不是数字/整数...");
+            return false;
+        }
+    }
+
 }
