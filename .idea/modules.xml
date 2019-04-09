@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/MyCommons.iml" filepath="$PROJECT_DIR$/.idea/MyCommons.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyCommons.iml" filepath="$PROJECT_DIR$/MyCommons.iml" />
     </modules>
   </component>

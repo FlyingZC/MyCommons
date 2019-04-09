@@ -55,4 +55,11 @@ public class T01BigDecimal
         System.out.println(BigDecimalUtil.multiply(b1, b2));
         System.out.println(BigDecimalUtil.divide(b1, b2, 0));
     }
+
+    @Test
+    public void testToString() {
+        BigDecimal b = new BigDecimal("1.22");
+        System.out.println(b.toString());
+        System.out.println(String.valueOf(b));
+    }
 }

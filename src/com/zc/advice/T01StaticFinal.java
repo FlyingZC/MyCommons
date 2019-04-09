@@ -18,6 +18,7 @@ public class T01StaticFinal
     public static void addToList()
     {
         list.add(1);
-        //list=new List<Integer>();
+        // Cannot assign a value to final variable 'list'
+        // list = new ArrayList<Integer>();
     }
 }

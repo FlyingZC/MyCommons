@@ -31,7 +31,7 @@ public class T16JS
         bind.put("factor", 3);
         //绑定上下文,作用域是当前引擎范围
         engine.setBindings(bind, ScriptContext.ENGINE_SCOPE);
-        engine.eval(new FileReader("mytest.js"));
+        engine.eval(new FileReader("src\\mytest.js"));
         //是否可调用方法
         if(engine instanceof Invocable)
         {
@@ -40,9 +40,10 @@ public class T16JS
          Scanner sc=new Scanner(System.in);
          while(true)
          {
+             System.out.println("请输入一个整数");
              int num=sc.nextInt();
-             Double result=(Double) in.invokeFunction("add", 1,num);
-             System.out.println(result.intValue());
+             Integer result = (Integer)in.invokeFunction("add", 1, num);
+             System.out.println(result);
          }
         }
     }
