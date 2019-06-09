@@ -48,6 +48,7 @@ public class T05StringBuffer
         for (int i = 0; i < 20000; i++)
         {
             text = text + i;
+            System.out.println(text);
         }
         endTime = System.currentTimeMillis();
         System.out.println("String的执行时间" + (endTime - startTime));

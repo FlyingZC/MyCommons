@@ -5,6 +5,25 @@ import org.junit.Test;
 public class T01Wrapper
 {
     @Test
+    public void test011() {
+        int i1 = 1;
+        int i2 = 1;
+        Integer in1 = 1;
+        System.out.println(i1 == i2);
+        System.out.println(in1 == i1);
+
+        Integer in2 = new Integer(1);
+
+        Integer in3 = 1;
+        System.out.println(in1 == in3);
+        System.out.println(in1 == in2);
+
+        Integer ii1 = 200;
+        Integer ii2 = 200;
+        System.out.println(ii1 == ii2);
+    }
+
+    @Test
     public void test01()
     {
         //自动拆箱,包装类隐式转换为基本类型
@@ -22,6 +41,18 @@ public class T01Wrapper
         Integer i2 = new Integer(1);
         int n1 = i2.intValue();
         double n2 = i2.doubleValue();
+    }
+
+    @Test
+    public void testt() {
+        Integer integer = 1;
+        int i = integer;
+        int ii = integer.intValue();
+
+        int i2 = 2;
+       Integer inte2 =  Integer.valueOf(i2);
+       Integer inte3 = i2;
+        System.out.println();
     }
 
     @Test
